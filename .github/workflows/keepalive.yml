@@ -41,7 +41,7 @@ jobs:
 
       # GitHub disables scheduled workflows in public repos after 60 days with
       # no repo activity. A commit once a week keeps this one alive.
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         if: always()
       - name: Weekly heartbeat commit
         if: always()
